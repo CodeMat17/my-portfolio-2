@@ -41,6 +41,7 @@ function HeroPage() {
           <div className='relative mx-auto w-[300px] h-[300px] overflow-hidden rounded-full shadow-xl shadow-gray-900'>
             <Image
               src='/my_pix.webp'
+              alt="Hero img"
               layout='fill'
               objectFit='cover'
               priority

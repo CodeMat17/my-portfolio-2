@@ -61,7 +61,7 @@ function ContactForm() {
     <div
       id='contact'
       ref={ref}
-      className='px-8 py-20 bg-gray-100 text-amber-500'>
+      className='px-4 py-20 bg-gray-100 text-amber-500'>
       <div className='max-w-md mx-auto'>
         <div className='flex justify-center'>
           <svg
