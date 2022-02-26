@@ -20,8 +20,8 @@ function HeroPage() {
             I Am Matthew
           </motion.h2>
           <motion.h1
-            initial={{ x: "100vw" }}
-            animate={{ x: 0 }}
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0 , opacity: 1 }}
             transition={{
               // delay: 0.1,
               type: "spring",
@@ -35,7 +35,7 @@ function HeroPage() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, rotate: 360 }}
-          transition={{ delay: 0, type: "spring", duration: 2, bounce: 0.3 }}
+          transition={{ type: "spring", duration: 2, bounce: 0.3 }}
           whileHover={{ scale: 1.1 }}
           className='pt-12 md:pt-0'>
           <div className='relative mx-auto w-[300px] h-[300px] overflow-hidden rounded-full shadow-xl shadow-gray-900'>
