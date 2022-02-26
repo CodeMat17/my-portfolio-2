@@ -92,7 +92,7 @@ function NavHeader() {
         {open && (
           <motion.aside
             initial={{ width: 0 }}
-            animate={{ width: 350 }}
+            animate={{ width: 300 }}
             exit={{
               width: 0,
               transition: {
@@ -100,7 +100,7 @@ function NavHeader() {
                 duration: 0.3,
               },
             }}
-            className='absolute right-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-bl-full'>
+            className='absolute left-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-br-full'>
             <div className='flex justify-end'>
               <button onClick={cycleOpen}>
                 <svg
