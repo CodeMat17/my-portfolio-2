@@ -131,7 +131,7 @@ function NavHeader() {
                     onClick={cycleOpen}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className='font-bold text-xl'>
+                    className='font-bold text-2xl'>
                     {link.name}
                   </motion.a>
                 </Link>
