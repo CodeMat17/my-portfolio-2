@@ -51,7 +51,7 @@ function NavHeader() {
         {/* Start of mobile menu */}
         <div className='sm:hidden'>
           {/* Start enu button */}
-          {!open && (
+         
             <button onClick={cycleOpen}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -59,15 +59,24 @@ function NavHeader() {
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'>
+                 {!open ? (
                 <path
                   strokeLinecap='round'
                   strokeLinejoin='round'
                   strokeWidth='3'
                   d='M4 6h16M4 12h16m-7 6h7'
+                />) : (
+                  <path
+                    className="text-red-500"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='3'
+                  d='M6 18L18 6M6 6l12 12'
                 />
+                 )}
               </svg>
             </button>
-          )}
+         
 
           {/* End of Menu button */}
         </div>
@@ -100,30 +109,14 @@ function NavHeader() {
                 duration: 0.3,
               },
             }}
-            className='absolute left-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-br-full'>
-            <div className='flex justify-end'>
-              <button onClick={cycleOpen}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-8 w-8 text-red-500'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='3'
-                    d='M6 18L18 6M6 6l12 12'
-                  />
-                </svg>
-              </button>
-            </div>
+            className='absolute left-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-br-full border border-amber-700'>
+           
             <motion.div
               variants={sideVariants}
               initial='closed'
               animate='open'
               exit='closed'
-              className='pt-20 py-32 flex flex-col items-center justify-center space-y-8'>
+              className='pt-20 py-32 flex flex-col items-center justify-center space-y-10'>
               {links.map((link) => (
                 <Link key={link.id} href={link.to}>
                   <motion.a
