@@ -37,7 +37,7 @@ function NavHeader() {
 
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-between px-4 py-2 bg-amber-500'>
-      <div className='flex items-center space-x-2'>
+      <div className='flex items-center space-x-2 z-50'>
         <Image
           src='/logo.webp'
           width={50}
