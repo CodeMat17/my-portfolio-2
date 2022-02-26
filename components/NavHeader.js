@@ -109,7 +109,7 @@ function NavHeader() {
                 duration: 0.3,
               },
             }}
-            className='absolute left-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-br-full border border-amber-700'>
+            className='absolute left-0 top-0 px-4 py-4 bg-amber-500 opacity-95 rounded-br-full border-2 border-amber-700'>
            
             <motion.div
               variants={sideVariants}
