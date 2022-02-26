@@ -74,6 +74,11 @@ function AboutMe() {
                 For Policy and Strategic Studies, NIPSS, Kuru, Jos, Nigeria.
               </p>
             </div>
+            <div className='text-center pt-6 text-lg'>
+              <p>
+                I am a B.Tech holder (Physics Electronics).
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>
