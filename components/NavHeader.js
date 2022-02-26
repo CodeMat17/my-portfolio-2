@@ -92,7 +92,7 @@ function NavHeader() {
         {open && (
           <motion.aside
             initial={{ width: 0 }}
-            animate={{ width: 400 }}
+            animate={{ width: 300 }}
             exit={{
               width: 0,
               transition: {
