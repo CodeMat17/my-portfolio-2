@@ -166,7 +166,7 @@ function Projects() {
                       <div key={name.id} className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-3 w-3 text-lime-500'
+                          className='h-2 w-2 text-lime-500'
                           fill='none'
                           viewBox='0 0 24 24'
                           stroke='currentColor'>
