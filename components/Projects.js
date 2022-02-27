@@ -69,8 +69,6 @@ function Projects() {
           type: "spring",
           duration: 1.5,
           bounce: 0.3,
-          staggerChildren: 0.2,
-          staggerDirection: 1,
         },
       });
     }
@@ -80,7 +78,7 @@ function Projects() {
     <div
       id='projects'
       ref={ref}
-      className='px-3 py-20 bg-gray-100 text-amber-500'>
+      className='px-4 py-20 bg-gray-100 text-amber-500'>
       <div>
         <div className='flex justify-center'>
           <svg
@@ -111,7 +109,7 @@ function Projects() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 key={project.id}
-                className='w-full h-auto p-4 bg-gray-700/75 shadow-xl shadow-gray-900 rounded-lg transition transform hover:scale-105'>
+                className='w-full h-auto p-4 bg-gray-700/75 shadow-xl shadow-gray-900 rounded-lg'>
                 <div className='flex items-center justify-between'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -168,7 +166,7 @@ function Projects() {
                       <div key={name.id} className='flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-4 w-4 text-lime-500'
+                          className='h-3 w-3 text-lime-500'
                           fill='none'
                           viewBox='0 0 24 24'
                           stroke='currentColor'>
