@@ -1,4 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -80,20 +81,15 @@ function Projects() {
       ref={ref}
       className='px-4 py-20 bg-gray-100 text-amber-500'>
       <div>
-        <div className='flex justify-center'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-16 w-16'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01'
+        <div className='flex items-center justify-center'>
+          <div className='relative w-[200px] h-[200px]'>
+            <Image
+              src='/projects.svg'
+              objectFit='cover'
+              priority
+              layout='fill'
             />
-          </svg>
+          </div>
         </div>
 
         <h1 className='pt-2 text-center font-bold tracking-widest text-4xl font-concert'>

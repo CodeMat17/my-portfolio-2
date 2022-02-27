@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -63,20 +64,15 @@ function ContactForm() {
       ref={ref}
       className='px-4 py-20 bg-gray-100 text-amber-500'>
       <div className='max-w-md mx-auto'>
-        <div className='flex justify-center'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-16 w-16'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
+        <div className='flex items-center justify-center'>
+          <div className='relative w-[250px] h-[250px]'>
+            <Image
+              src='/contactme.svg'
+              objectFit='cover'
+              priority
+              layout='fill'
             />
-          </svg>
+          </div>
         </div>
 
         <h1 className='pt-2 text-center font-bold tracking-widest text-4xl font-concert'>
