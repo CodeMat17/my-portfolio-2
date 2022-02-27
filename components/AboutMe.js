@@ -61,7 +61,7 @@ function AboutMe() {
                 I love giving back to the tech ecosystem by mentoring the
                 younger developers. I have mentored and facilitated meetups
                 across Africa (physically and remotely) for Google Africa via
-                Andela Learning Community, ALC, for 3 seasons
+                Andela Learning Community, ALC, for 3 seasons.
               </p>
             </div>
             <div className='text-center pt-6 text-lg'>

@@ -158,7 +158,7 @@ function Projects() {
                   </div>
                 </div>
                 <div className='pt-6'>
-                  <h1 className='font-bold font-concert tracking-widest text-3xl'>
+                  <h1 className='font-bold font-concert tracking-widest text-2xl'>
                     {project.title}
                   </h1>
                   <p className='pt-4 tracking-wider'>{project.desc}</p>
@@ -179,7 +179,7 @@ function Projects() {
                             d='M5 13l4 4L19 7'
                           />
                         </svg>
-                        <p className='whitespace-nowrap'>{name.name}</p>
+                        <p className='whitespace-nowrap text-sm'>{name.name}</p>
                       </div>
                     ))}
                   </div>

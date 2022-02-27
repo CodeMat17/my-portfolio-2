@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const techs = [
   { id: 1, name: "JavaScript" },
-  { id: 2, name: "React" },
+  { id: 2, name: "React / Next.js" },
   { id: 3, name: "Tailwind CSS" },
   { id: 4, name: "REST API" },
   { id: 5, name: "GraphQL" },
@@ -13,7 +13,9 @@ const techs = [
   { id: 8, name: "MongoDB" },
   { id: 9, name: "Framer-Motion" },
   { id: 10, name: "Recoil" },
-  { id: 11, name: "Cloudinary" },
+  { id: 11, name: "Vue / Nuxt.js" },
+  { id: 12, name: "Firebase" },
+  { id: 13, name: "Cloudinary" },
 ];
 
 function Tech() {
