@@ -34,8 +34,8 @@ function HeroPage() {
         </div>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, rotate: 360 }}
-          transition={{ type: "spring", duration: 2, bounce: 0.3 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 2 }}
           whileHover={{ scale: 1.1 }}
           className='pt-12 md:pt-0'>
           <div className='relative mx-auto w-[300px] h-[300px] overflow-hidden rounded-full shadow-xl shadow-gray-900'>
