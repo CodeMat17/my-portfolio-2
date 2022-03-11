@@ -45,6 +45,19 @@ const projects = [
     projectLink: "https://buyhere.netlify.app",
     githubLink: "https://github.com/Mctony17/buyhere-fe",
   },
+  {
+    id: 4,
+    title: "Instagram Clone",
+    desc: "A responsive instagram clone app with basic features like add photo, like photo and add comments.",
+    with: [
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "TailwindCSS" },
+      { id: 3, name: "Firebase" },
+      { id: 4, name: "Next-Auth" },
+    ],
+    projectLink: "https://instagram-clone-topaz-five.vercel.app/",
+    githubLink: "https://github.com/Mctony17/instagram-clone",
+  },
 ];
 
 function Projects() {
